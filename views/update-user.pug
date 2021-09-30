@@ -1,0 +1,50 @@
+extends layout.pug 
+
+block name 
+    |Update user 
+
+block css 
+    link(href="css/add-user-style.css" rel="stylesheet")
+
+block content 
+    //- form handling  start
+    form#update-user(method="POST") 
+        div.btns
+            a.add-user-btn.btn(href="/")
+                span.material-icons.icons.mi chevron_left
+                span.add-user-text All Users
+        div.form-head
+            h2 Update User 
+        div.form-details Use the form below to update the user
+        .new-user
+            .form-group 
+                label.form-text(for="name")  Name
+                input(type="hidden", name="id", value="")
+                input(type="text", name="name" , value=  `${user.name}`, placeholder="Name")
+
+            .form-group 
+                label.form-text(for="Email")  Email
+                input(type="text", name="email" , value= `${user.email}`, placeholder="Email")
+
+            .form-group 
+                label.form-text(for="gender")  Gender
+                .radio 
+                    input(type="radio", id="gender-1", name="gender" , value="Male" ,checked=(user.gender == "Male"?"checked":"False"))
+                    label.radio-label(for="gender-1")  Male
+
+                .radio 
+                    input(type="radio",  id="gender-2",name="gender" , value="Female",checked=(user.gender == "Female"?"checked":"False"))
+                    label.radio-label(for="gender-2")  Female
+                    
+            .form-group 
+                label.form-text(for="status")  Status
+                .radio 
+                    input(type="radio",  id="status-1",name="status" , value="Active",checked=(user.gender == "Active"?"checked":"False"))
+                    label.radio-label(for="status-1")  Active
+
+                .radio 
+                    input(type="radio",  id="status-2",name="status" , value="Inactive",checked=(user.gender == "Inactive"?"checked":"False"))
+                    label.radio-label(for="status-2")  Inactive
+
+            .form-group 
+                button.sbt-btn.btn(type="submit") Save

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto&display=swap');
+/* font-family: 'Gowun Dodum', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+#header{
+    background: #00FA9A;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+#header a{
+    text-decoration: none;
+    color: #1c2841;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+}
+.site-main{
+    width: 100%;
+    margin-top: auto;
+    min-width: 500px;
+    max-width: 1008px;
+}
+.add-user-btn{
+    height: 2.5rem;
+    margin: 1rem 0;
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #1c2841;
+    border-radius: 5px;
+}
+.add-user-text{
+    padding: 0 0.3rem;
+}
+.mi{
+    top:3px;
+    margin: 3px;
+    margin-left: 5px;
+    position: relative;
+}
+.btn{
+    border: 1px solid #dee2e6;
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+.btn:hover{
+    color: black;
+    background: rgba(0,0,0,0.1);
+}
+.form-head{
+    color: #1c2841;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.5rem;
+    text-align: center;
+}
+.form-details{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: gray;
+}
+.new-user{
+    max-width: 786px;
+    margin: auto;
+    text-align: none;
+    width: 80%;
+    padding: 0rem 1rem;
+}
+.form-group{
+    margin:1rem 0;
+    text-align: left;
+}
+.form-text{
+    width: 4rem;
+    display: inline-block;
+    color: gray;
+    text-align: left;
+}
+.form-group input[type="text"]{
+    width:100%;
+    padding: 0.6rem 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #dee2e6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    text-align: left;
+}
+.form-group input[type="radio"]{
+    margin: 1rem 2rem;
+
+}
+.radio{
+    display:inline-block;
+}
+.radio input[type="radio"]{
+    position: relative;
+    opacity: 0;
+}
+.radio input[type="radio"] + .radio-label:before{
+    content: "";
+    background: #dee2e6;
+    border-radius: 100%;
+    border: 1px solid #e9ecef;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    top: 0;
+    margin-right: 0.5rem;
+    vertical-align: center;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+.radio input[type="radio"]:checked + .radio-label:before{
+    background: #00FA9A;
+    box-shadow: inset 0 0 0 4px #e9ecef;
+}
+.radio input[type="radio"]:focused + .radio-label:before{
+    outline: none;
+    border-color: #00FA9A;
+}
+.radio input[type="radio"]:disabled + .radio-label:before{
+    box-shadow: inset 0 0 0 4px #e9ecef;
+    border-color: #dee2e6;
+    background: #dee2e6;
+}
+.sbt-btn{
+    width: 100%;
+    background: #00FA9A;
+    border: none;
+    margin: 1.5rem 0;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.sbt-btn:hover{
+    background: #1c2841;
+    color: gray;
+}

@@ -1,0 +1,36 @@
+extends layout.pug 
+
+block name 
+    |Home
+
+block css 
+    link(href="css/index-style.css" rel="stylesheet")
+
+block content 
+    //- form handling  start
+    form(action="/", method="post") 
+        div.btns
+            a.new-user-btn.btn(href="/add-user")
+                span.new-user-text New User
+                span.material-icons.icons.mi person_add
+        table.table
+            thead.thead
+                tr      
+                    th ID 
+                    th Name
+                    th @Email 
+                    th Gender
+                    th Status
+                    th Action
+            tbody.tbody   
+                - for (var i = 0; i < users.length; ++i) {
+                tr
+                    td= i+1 
+                    td= users[i].name
+                    td= users[i].email
+                    td= users[i].gender
+                    td= users[i].status
+                    td.update 
+                        a.edt-btn.material-icons.btn(href='/update-user?id='+ users[i]._id) edit        
+                        a.edt-btn.material-icons.btn.sbt-btn(data-id = `${users[i]._id}`) clear 
+                - } 

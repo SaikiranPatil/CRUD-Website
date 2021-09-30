@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto&display=swap');
+/* font-family: 'Gowun Dodum', sans-serif;
+font-family: 'Roboto', sans-serif; */
+/* #00FA9A
+#4b00fa
+#faa300
+#fa2600 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+#header{
+    background: #00FA9A;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+#header a{
+    text-decoration: none;
+    color: #1c2841;
+}
+.site-main{
+    width: 100%;
+    margin: 0 auto;
+    /* min-width: 500px; */
+    max-width: 1008px;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+}
+.new-user-btn{
+    height: 2.5rem;
+    margin: 1rem 0;
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #1c2841;
+    border-radius: 5px;
+}
+tr:hover{
+    background: #00FA9A;
+}
+tr:hover .edt-btn{
+    /* border: 1px solid rgba(28,40,65,0.5);
+    box-shadow: 1px 3px 10px rgba(0,250,150,0.5),-1px 3px 10px rgba(0,250,150,0.5),1px -3px 10px rgba(0,250,150,0.5),-1px -3px 10px rgba(0,250,150,0.5); */
+    border-color: rgba(28,40,65,0.3);
+    box-shadow: 0.5px 0.5px 10px rgba(28,40,65,0.3);
+}
+.btn:hover{
+    color: black;
+    background: rgba(0,0,0,0.1);
+}
+.new-user-text{
+    padding: 0 0.3rem;
+}
+form{
+    margin: auto;
+}
+.mi{
+    top:3px;
+    margin: 3px;
+    margin-left: 5px;
+    position: relative;
+}
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+.table .thead th {
+    background:#1c2841;
+    color: white;
+    font-weight: normal;
+    padding: 0.8rem 1rem;
+}
+.tbody td ,.table th{
+    padding: 0.75rem;
+    vertical-align: top;
+}
+.tbody td{
+    font-family: 'Gowun Dodum', sans-serif;
+}
+.edt-btn{
+    margin: 0 0.5rem;
+    color: #1c2841;
+    cursor: pointer;
+}
+tr{
+    box-shadow: 0 1px rgba(0,0,0,0.1);
+}
+.btn{
+    border: 1px solid #dee2e6;
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+@media only screen and (max-width:1024px) {
+    th,td{
+        display: block;
+    }
+    form{
+        width: 80%;
+    }
+    .thead{
+        display: none;
+    }
+    td,td:hover{
+        background: rgba(0,0,0,0.1);
+    }
+    .table{
+        border-collapse: separate;
+        border-spacing: 0 5rem;
+    }
+    .site-main{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width:500px) {
+    .btns{
+        justify-content: center;
+    }
+    form{
+        width: 80%;
+    }
+    .site-main{
+        min-width: none;
+        max-width: none;
+    }
+    .table{
+        border-collapse: separate;
+        border-spacing: 0 3rem;
+    }
+}
