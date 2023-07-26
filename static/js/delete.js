@@ -2,7 +2,7 @@ document.querySelectorAll(".dlt-btn").forEach(function (button) {
     button.addEventListener("click", function () {
         console.log("first");
         var id = button.getAttribute("data-id");
-        var url = `${process.env.BASE_URL}:80/api/users/${id}`;
+        var url = `${process.env.BASE_URL}/api/users/${id}`;
 
         if (confirm("Do you really want to delete this record?")) {
             fetch(url, {

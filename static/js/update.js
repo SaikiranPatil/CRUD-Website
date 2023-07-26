@@ -9,7 +9,7 @@ document.getElementById("update-user").addEventListener("submit", function (even
     });
 
     var id = data.id;
-    var url = `${process.env.BASE_URL}:80/api/users/${id}`;
+    var url = `${process.env.BASE_URL}/api/users/${id}`;
 
     fetch(url, {
         method: "PUT",
