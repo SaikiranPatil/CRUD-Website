@@ -4,7 +4,6 @@ const path = require("path");
 const connectDB = require("./server/database/connections");
 
 var morgan = require('morgan');
-// var bodyparser = require("body-parser");
 
 const app = express();
 
@@ -19,7 +18,6 @@ connectDB();
 
 // for serving static files
 app.use('/static', express.static('static'));
-// app.use(express.urlencoded())
 
 // parse requested to body parser
 app.use(express.json());
