@@ -8,7 +8,7 @@ var morgan = require('morgan');
 
 const app = express();
 
-dotenv.config({path: 'config.env'}) ;
+dotenv.config({path: '.env'}) ;
 const port = process.env.PORT||8080;
 
 // log request
