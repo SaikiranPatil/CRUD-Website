@@ -2,7 +2,6 @@ const express = require('express');
 const dotenv = require('dotenv');
 const path = require("path");
 const connectDB = require("./server/database/connections");
-
 var morgan = require('morgan');
 
 const app = express();
