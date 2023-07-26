@@ -39,5 +39,5 @@ app.use("/img",express.static(path.resolve(__dirname,"static/img")));
 app.use("/js",express.static(path.resolve(__dirname,"static/js")));
 
 app.listen(port,()=>{
-    console.log(`The server is started at port http://localhost:${port}`);
+    console.log(`The server is started at port ${process.env.BASE_URL}:${port}`);
 })

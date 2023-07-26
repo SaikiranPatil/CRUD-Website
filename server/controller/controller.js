@@ -15,7 +15,6 @@ exports.create = (req, res) => {
         gender: req.body.gender,
         status: req.body.status
     })
-    console.log("first")
     // save user in the database
     user
         .save()
