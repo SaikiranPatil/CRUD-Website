@@ -30,6 +30,9 @@ app.set("view engine","pug");
 // load router 
 app.use("/",require("./server/routes/router"));
 
+// Set up views path
+app.set('views', path.join(__dirname, "views"));
+
 // set up paths 
 app.use("/css",express.static(path.resolve(__dirname,"static/css")));
 app.use("/img",express.static(path.resolve(__dirname,"static/img")));
